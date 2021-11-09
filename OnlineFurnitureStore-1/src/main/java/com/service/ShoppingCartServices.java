@@ -14,14 +14,15 @@ import com.repository.CartRepository;
 public class ShoppingCartServices implements ShoppingCartService
 {
 
+	//Auto wiring the objects for using the JpaRepository methods
 	@Autowired
-	CartRepository cr;
+	CartRepository cartRepo;
 	
-	
+	//This method is for returning all the registered carts
 	@Override
 	public List<Cart> getAllCarts() throws ShoppingCartException 
 	{
-		List<Cart> cartTemp = cr.findAll();
+		List<Cart> cartTemp = cartRepo.findAll();
 		
 		if (cartTemp.isEmpty()) 
 		{
@@ -29,70 +30,73 @@ public class ShoppingCartServices implements ShoppingCartService
 		} 
 		else 
 		{
-			List<Cart> getAllCarts = cr.findAll();
+			List<Cart> getAllCarts = cartRepo.findAll();
 			return getAllCarts;
 		}
 	}
 
+	//This method is for getting cart based on its ID
 	@Override
 	public Cart getCartById(int cartId) throws ShoppingCartException 
 	{
-		Optional<Cart> cartTemp = cr.findById(cartId);
+		Optional<Cart> cartTemp = cartRepo.findById(cartId);
 		if (cartTemp.isPresent() == false) 
 		{
 			throw new ShoppingCartException("CartId does not exist");
 		} 
 		else 
 		{
-			Cart getCart = cr.findById(cartId).orElse(null);
+			Cart getCart = cartRepo.findById(cartId).orElse(null);
 			return getCart;
 		}
 	}
 
 	
-
+	//This method is for updating cart details based on its ID
 	@Override
 	public Cart updateCartById(int cartId, Cart cart) throws ShoppingCartException
 	{
-		Optional<Cart> cartTemp = cr.findById(cartId);
+		Optional<Cart> cartTemp = cartRepo.findById(cartId);
 		if (cartTemp.isPresent() == false) 
 		{
 			throw new ShoppingCartException("Cart does not exist");
 		} 
 		else 
 		{
-			Cart updcart = cr.save(cart);
+			Cart updcart = cartRepo.save(cart);
 			return updcart;
 		}
 		
 	}
 
+	//Deletion of cart
 	@Override
 	public String deleteCart(Cart cart) throws ShoppingCartException 
 	{
-		List<Cart> cartTemp = cr.findAll();
+		List<Cart> cartTemp = cartRepo.findAll();
 		if (cartTemp.isEmpty()) 
 		{
 			throw new ShoppingCartException("Cart not found");
 		} 
 		else 
 		{
-			cr.deleteAll();
+			cartRepo.deleteAll();
 			return "All carts deleted";
 		}
 	}
 
+	//Deletion based on its ID
 	@Override
 	public String deleteCartById(int cartId) throws ShoppingCartException
 	{
-		List<Cart> cartTemp = cr.findAll();
+		List<Cart> cartTemp = cartRepo.findAll();
 		if (cartTemp.isEmpty()) 
 		{
 			throw new ShoppingCartException("Cart not found");
 		} 
 		else 
 		{
-			cr.deleteById(cartId);;
+			cartRepo.deleteById(cartId);;
 			return "Cart deleted Successfuly";
 		}
 	}

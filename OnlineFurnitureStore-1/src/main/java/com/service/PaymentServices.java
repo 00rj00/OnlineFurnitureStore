@@ -11,25 +11,26 @@ import com.repository.*;
 
 public class PaymentServices implements PaymentService
 {
-	FurnitureOrder order;
+		
+	//Auto wiring the objects for using the JpaRepository methods
+	@Autowired
+	BillRepository billRepo;
 	
 	@Autowired
-	BillRepository br;
+	OrderRepository orderRepo;
 	
 	@Autowired
-	OrderRepository or;
-	
-	@Autowired
-	CustomerRepository cr;
+	CustomerRepository customerRepo;
 
+	//Returns the Bill by ID for each user
 	@Override
 	public Bill getBillById(long billNo) 
 	{
-		return br.findById(billNo).orElse(null);
+		return billRepo.findById(billNo).orElse(null);
 	}
 	
 	
-
+	//This method is for Cash On Delivery for the furniture Order
 	@Override
 	public double payByCash(double amount,double price) throws Exception {
 		
@@ -40,10 +41,10 @@ public class PaymentServices implements PaymentService
 	}
 
 
-
+	//This method is for adding Bill details before payment
 	@Override
 	public Bill addBillDetails(Bill bill) {
-		return br.save(bill);
+		return billRepo.save(bill);
 	}
 
 	

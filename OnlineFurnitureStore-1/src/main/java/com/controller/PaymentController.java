@@ -31,7 +31,7 @@ public class PaymentController
 	}
 	
 	
-	@PutMapping("/payByCash/{orderId}")
+	@PutMapping("/payByCash")
 	public ResponseEntity<String> payByCash(@RequestParam double amount,@RequestParam double price) throws Exception {
 		double change = pays.payByCash(amount,price);
 		if (change == 0) 

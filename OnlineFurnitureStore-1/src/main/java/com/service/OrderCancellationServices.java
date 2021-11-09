@@ -12,24 +12,24 @@ import com.entity.FurnitureOrder;
 import com.exception.OrderServiceException;
 import com.repository.OrderCancellationRepository;
 
+//This module is for cancellation of an Order 
 @Service
-
 public class OrderCancellationServices implements OrderCancellationService
 {
-
+	////Auto wiring the objects for using the JpaRepository methods
 	@Autowired
-	OrderCancellationRepository ocr;
+	OrderCancellationRepository orderCancellationRepo;
 	
-	
+	//This method is for canceling the order 
 	@Override
 	public String deleteOrder(FurnitureOrder order) throws OrderServiceException 
 	{
 		List<FurnitureOrder> resultFurniture;
 		try {
-			resultFurniture = ocr.findAll();
+			resultFurniture = orderCancellationRepo.findAll();
 			if (resultFurniture != null) 
 			{
-				ocr.deleteAll();
+				orderCancellationRepo.deleteAll();
 				return "All Values are deleted successfully";
 			} 
 			else 
@@ -43,17 +43,18 @@ public class OrderCancellationServices implements OrderCancellationService
 		}
 	}
 
+	//This method is also for canceling Order but by ID
 	@Override
 	public String deleteOrderById(String orderId) throws OrderServiceException {
 		try {
-			Optional<FurnitureOrder> del = ocr.findById(orderId);
+			Optional<FurnitureOrder> del = orderCancellationRepo.findById(orderId);
 			if (del == null) 
 			{
 				throw new OrderServiceException("no user found");
 			} 
 			else 
 			{
-				ocr.deleteById(orderId);
+				orderCancellationRepo.deleteById(orderId);
 				return "Order Deleted" + del;
 
 			}

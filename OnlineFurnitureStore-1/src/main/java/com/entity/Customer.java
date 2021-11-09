@@ -29,13 +29,6 @@ public class Customer extends FurnitureUser {
 	@Size(max = 10, message = "Contact number must be 10 numbers")
 	private String contactNo;
 
-	/*
-	 * @Column(name = "email", unique = true, nullable = true, length = 25)
-	 * 
-	 * @Pattern(regexp = "^[A-Z0-9+_.-]+@[A-Z0-9.-]+$")
-	 * 
-	 * @Size(max = 100, message = "Enter a valid email")
-	 */
 	private String email;
 
 	public String getName() {

@@ -16,27 +16,27 @@ import com.exception.CustomerShoppingException;
 @Service
 public class CustomerShoppingServices implements CustomerShoppingService
 {
+	//Auto wiring the objects for using the JpaRepository methods
+	@Autowired
+	FurnitureRepository furnitureRepo;
 	
 	@Autowired
-	FurnitureRepository fr;
+	OrderRepository orderRepo;
 	
 	@Autowired
-	OrderRepository or;
+	CartRepository cartRepo;
 	
 	@Autowired
-	CartRepository cr;
-	
-	@Autowired
-	CustomerRepository r;
+	CustomerRepository customerRepo;
 
 	
-	
+	//This method will return all the furniture types that are available in DB
 	@Override
 	public List<Furniture> getAllFurnitures() throws CustomerShoppingException 
 	{
 		try 
 		{
-			List<Furniture> allFurniture = fr.findAll();
+			List<Furniture> allFurniture = furnitureRepo.findAll();
 			if(allFurniture != null)
 			{
 				return allFurniture;
@@ -55,13 +55,13 @@ public class CustomerShoppingServices implements CustomerShoppingService
 	}
 
 	
-	
+	//This method is used to return a furniture based on its Name
 	@Override
 	public Furniture getFurnitureByName(String furnitureName) throws CustomerShoppingException
 	{
 		try 
 		{
-			Furniture result = fr.findbyName(furnitureName);
+			Furniture result = furnitureRepo.findbyName(furnitureName);
 			return result; 
 		}
 		catch (Exception e) 
@@ -71,27 +71,27 @@ public class CustomerShoppingServices implements CustomerShoppingService
 	}
 
 	
-	
+	//This method is to add the required furniture on to cart
 	@Override
 	public Cart addtoCart(Cart cart) throws CustomerShoppingException
 	{
-		return cr.save(cart);
+		return cartRepo.save(cart);
 	}
 
 	
-	
+	//This method is to place order for purchase
 	@Override
 	public FurnitureOrder placeOrder(FurnitureOrder order) throws CustomerShoppingException
 	{
-		return or.save(order);
+		return orderRepo.save(order);
 	}
 	
 	
-	
+	//This method is for adding customer details before shopping for furniture
 	@Override
 	public Customer addCustomerDetails(Customer cd) 
 	{
-		return r.save(cd);
+		return customerRepo.save(cd);
 	}
 
 }

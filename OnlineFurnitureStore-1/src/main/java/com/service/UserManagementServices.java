@@ -13,16 +13,18 @@ import com.repository.UserManagementRepository;
 
 
 @Service
+//User Management Service
 public class UserManagementServices implements UserManagementService 
 {
+	//Auto wiring the objects for using the JpaRepository methods
 	@Autowired
-	UserManagementRepository UserRepo;
+	private UserManagementRepository userRepo;
 
-	
+	//This method is for USER LOGIN / AUTHENTICATION
 	@Override
 	public String loginUser(FurnitureUser user) throws UserNotFoundException  
 	{
-		Optional<FurnitureUser> optionalUser=UserRepo.findById(user.getUId());
+		Optional<FurnitureUser> optionalUser=userRepo.findById(user.getUId());
 		if(!optionalUser.isEmpty())
 		{
 			if(optionalUser.get().getPassword().equals(user.getPassword()))
@@ -40,15 +42,15 @@ public class UserManagementServices implements UserManagementService
 		}
 	}
 
-	
+	//This method is for registration for new user
 	@Override
 	public FurnitureUser registerNewUser(FurnitureUser user) throws UserNotFoundException{
-		Optional<FurnitureUser> userTemp = UserRepo.findById(user.getUId());
+		Optional<FurnitureUser> userTemp = userRepo.findById(user.getUId());
 		try 
 		{
 			if (userTemp != null) 
 			{
-				user = UserRepo.save(user);
+				user = userRepo.save(user);
 				return user;
 			} 
 			else 
@@ -62,15 +64,15 @@ public class UserManagementServices implements UserManagementService
 		}
 	}
 
-	
+	//This method is to update user details
 	@Override
 	public FurnitureUser updateUser(FurnitureUser user) throws UserNotFoundException{
-		Optional<FurnitureUser> resultUser = UserRepo.findById(user.getUId());
+		Optional<FurnitureUser> resultUser = userRepo.findById(user.getUId());
 		try {
 			
 			if ((resultUser != null)) 
 			{
-				FurnitureUser updateUser = UserRepo.save(user);
+				FurnitureUser updateUser = userRepo.save(user);
 				return updateUser;
 			} 
 			else 
@@ -84,16 +86,16 @@ public class UserManagementServices implements UserManagementService
 		}
 	}
 
-	
+	//This method is for deleting a user
 	@Override
 	public String deleteUser(FurnitureUser user) throws UserNotFoundException{
 		List<FurnitureUser> resultUser = new ArrayList<FurnitureUser>();
 		try 
 		{
-			resultUser = UserRepo.findAll();
+			resultUser = userRepo.findAll();
 			if (resultUser != null) 
 			{
-				UserRepo.deleteAll();
+				userRepo.deleteAll();
 				return "Deleted successfully";
 			} 
 			else 
@@ -108,10 +110,10 @@ public class UserManagementServices implements UserManagementService
 		}
 	}
 
-	
+	//This method is for deleting a user based on UserID
 	@Override
 	public FurnitureUser deleteUserById(int uid) throws UserNotFoundException{
-		Optional<FurnitureUser> del = UserRepo.findById(uid);
+		Optional<FurnitureUser> del = userRepo.findById(uid);
 		
 		if (del == null) 
 		{
@@ -119,7 +121,7 @@ public class UserManagementServices implements UserManagementService
 		}
 		else 
 		{
-			UserRepo.deleteById(uid);
+			userRepo.deleteById(uid);
 			if (del.isPresent()) 
 			{
 				return del.get();

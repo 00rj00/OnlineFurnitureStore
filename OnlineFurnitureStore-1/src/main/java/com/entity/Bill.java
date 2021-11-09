@@ -17,11 +17,11 @@ public class Bill {
 	private Customer customers;
 	@OneToOne(targetEntity = Furniture.class, cascade = CascadeType.ALL)
 	private Furniture furniture;
-	@NotBlank(message = "Quantity should not be blank")
+	
 	private int quanity;
-	@NotBlank(message = "Price should not be blank")
+
 	private double price;
-	@NotBlank(message = "Amount should not be blank")
+
 	private double amount;
 
 	public Bill(long billNo, Customer customers, Furniture furniture, int quanity, double price, double amount) {

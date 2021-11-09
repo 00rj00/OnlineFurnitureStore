@@ -13,9 +13,9 @@ public class Review {
 
 	@Id
 	private int feedBackId;
-	@Pattern(regexp = "^[1-5]{1}$", message = "Review rating number must be in between 1 to 5")
+	//@Pattern(regexp = "^[1-5]{1}$", message = "Review rating number must be in between 1 to 5")
 	private int reviewRating;
-	@Pattern(regexp = "^[A-Za-z ]{1,50}$", message = "Name must only be alphabets and whitespaces from 1 to 50 characters")
+	//@Pattern(regexp = "^[A-Za-z ]{1,50}$", message = "Name must only be alphabets and whitespaces from 1 to 50 characters")
 	private String comments;
 	@ManyToOne(targetEntity = Furniture.class, cascade = CascadeType.ALL)
 	private Furniture furniture;

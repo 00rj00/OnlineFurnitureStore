@@ -23,8 +23,6 @@ public class Cart {
 	@ManyToOne(targetEntity = Furniture.class, optional = false)
 	private Furniture furniture;
 
-	@Column(name = "Quantity", nullable = false, length = 50)
-	@NotBlank(message = "Quantity should not be blank")
 	private int quantity;
 
 	public int getCartId() {

@@ -30,11 +30,8 @@ public class FurnitureOrder {
 	private Furniture furniture;
 	@OneToOne(cascade = CascadeType.ALL)
 	private Customer customer;
-	@NotBlank(message = "Quantity should not be blank")
 	private int quanity;
-	@NotBlank(message = "Price should not be blank")
 	private double price;
-	@NotBlank(message = "Amount should not be blank")
 	private double amount;
 	private String status;
 
@@ -42,7 +39,8 @@ public class FurnitureOrder {
 	}
 
 	public FurnitureOrder(String orderId, Date orderDate, Furniture furniture, Customer customer, int quanity,
-			double price, double amount, String status) {
+			double price, double amount, String status) 
+	{
 		this.orderId = orderId;
 		this.orderDate = orderDate;
 		this.furniture = furniture;

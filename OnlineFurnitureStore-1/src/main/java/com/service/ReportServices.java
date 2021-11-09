@@ -14,47 +14,54 @@ import com.entity.FurnitureOrder;
 import com.exception.ReportException;
 import com.repository.*;
 
+//This is an ADMIN MODULE for the purpose of gathering reports of all the purchases and stuff
 @Service
-
 public class ReportServices implements ReportService
 {
+	
+	//Auto wiring the objects for using the JpaRepository methods
 	@Autowired
-	BillRepository br;
+	BillRepository billRepo;
 	
 	@Autowired
-	CustomerRepository csr;
+	CustomerRepository customerRepo;
 	
 	@Autowired
-	CartRepository cr;
+	CartRepository cartRepo;
 	
 	@Autowired
-	OrderRepository or;
+	OrderRepository orderRepo;
 
+	
+	//This method is for getting all the Bills for reports
 	@Override
 	public List<Bill> getAllBills() throws ReportException 
 	{		
-		List<Bill> bills = br.findAll();
+		List<Bill> bills = billRepo.findAll();
 		return bills;
 	}
 
+	//This method is for getting all the customer details
 	@Override
 	public List<Customer> getAllCustomers() throws ReportException 
 	{
-		List<Customer> customers = csr.findAll();
+		List<Customer> customers = customerRepo.findAll();
 		return customers;
 	}
 
+	//This method is for getting all the Carts that are registered
 	@Override
 	public List<Cart> getAllCarts() throws ReportException 
 	{
-		List<Cart> carts = cr.findAll();
+		List<Cart> carts = cartRepo.findAll();
 		return carts;
 	}
 
+	//This method is for getting all the Orders that are placed 
 	@Override
 	public List<FurnitureOrder> getAllOrders() throws ReportException 
 	{
-		List<FurnitureOrder> orders = or.findAll();
+		List<FurnitureOrder> orders = orderRepo.findAll();
 		return orders;
 	}
 

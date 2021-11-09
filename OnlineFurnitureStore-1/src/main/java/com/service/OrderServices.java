@@ -14,22 +14,23 @@ import com.repository.OrderRepository;
 @Service
 public class OrderServices implements OrderService
 {
+	//Auto wiring the objects for using the JpaRepository methods
 	@Autowired
-	OrderRepository or;
+	OrderRepository orderRepo;
 
-
+	//This method is for displaying all the orders
 	@Override
 	public List<FurnitureOrder> getAllOrders() {
-		List<FurnitureOrder> getOrders = or.findAll();
+		List<FurnitureOrder> getOrders = orderRepo.findAll();
 		return getOrders;
 	}
 
-	
+	//This method is for updating Order
 	@Override
 	public FurnitureOrder updateOrder(FurnitureOrder order) throws UserNotFoundException {
 		if ((order != null)) 
 		{			
-			FurnitureOrder updateUserOrder = or.save(order);
+			FurnitureOrder updateUserOrder = orderRepo.save(order);
 			return updateUserOrder;
 		} 
 		else 
