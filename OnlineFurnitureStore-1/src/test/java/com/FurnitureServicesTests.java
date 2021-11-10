@@ -12,6 +12,7 @@ import com.service.FurnitureManagementServices;
 import static org.assertj.core.api.Assertions.assertThat;
 //import static org.junit.jupiter.api.Assertions.assertEquals;
 //import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +45,7 @@ public class FurnitureServicesTests
 		
 	
 	@Test
-	void updateFurniture() throws FurnitureServiceException{
+	void testUpdateFurniture() throws FurnitureServiceException{
 		Furniture furniture=new Furniture();
 		furniture.setFurnitureId(34);
 		furniture.setFurnitureColor("Black");
@@ -58,7 +59,7 @@ public class FurnitureServicesTests
 	
 	
 	@Test
-	void geAllFurniture() throws FurnitureServiceException{
+	void testGetAllFurniture() throws FurnitureServiceException{
 		Furniture furniture=new Furniture();
 		furniture.setFurnitureId(34);
 		furniture.setFurnitureColor("Black");
@@ -77,6 +78,23 @@ public class FurnitureServicesTests
 		Mockito.when(repo.findAll()).thenReturn(l);
 		assertThat(furnitureService.getAllFurnitures()).isEqualTo(l);
 	}
+	
+	@Test
+	void testGetFurnitureById() throws FurnitureServiceException{
+		Furniture furniture=new Furniture();
+		furniture.setFurnitureId(34);
+		furniture.setFurnitureColor("Black");
+		furniture.setFurnitureModel("Standard Bed Frame");
+		furniture.setFurnitureName("Bed");
+		furniture.setPrice(8999.0);		
+		
+		Optional<Furniture> c2 = Optional.of(furniture);
+		
+		Mockito.when(repo.findById((long) 34)).thenReturn(c2);
+		
+		assertThat(furnitureService.getFurnitureById(34)).isEqualTo(furniture);
+	}
+	
 	
 
 }
