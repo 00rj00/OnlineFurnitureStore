@@ -1,27 +1,348 @@
-2021-11-10 09:11:46,698 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
-2021-11-10 09:11:46,727 INFO com.OnlineFurnitureStore1Application [main] Starting OnlineFurnitureStore1Application using Java 17 on DESKTOP-GDATQRR with PID 10496 (C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1\target\classes started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
-2021-11-10 09:11:46,731 INFO com.OnlineFurnitureStore1Application [main] No active profile set, falling back to default profiles: default
-2021-11-10 09:11:49,001 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-11-10 09:11:49,351 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 335 ms. Found 8 JPA repository interfaces.
-2021-11-10 09:11:50,477 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2021-11-10 09:11:50,495 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2021-11-10 09:11:50,496 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2021-11-10 09:11:50,497 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-10 09:11:50,765 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2021-11-10 09:11:50,766 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3940 ms
-2021-11-10 09:11:51,120 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-11-10 09:11:51,204 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
-2021-11-10 09:11:51,424 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-11-10 09:11:51,595 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2021-11-10 09:11:51,952 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2021-11-10 09:11:52,005 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2021-11-10 09:11:52,525 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
-2021-11-10 09:11:53,650 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-11-10 09:11:53,679 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-11-10 09:11:55,144 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-11-10 09:11:56,725 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2021-11-10 09:11:56,760 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2021-11-10 09:11:57,727 INFO com.OnlineFurnitureStore1Application [main] Started OnlineFurnitureStore1Application in 11.633 seconds (JVM running for 13.31)
-2021-11-10 09:12:09,334 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-10 09:12:09,335 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2021-11-10 09:12:09,337 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-11-12 08:58:31,990 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 08:58:31,996 INFO com.OnlineFurnitureStore1Application [main] Starting OnlineFurnitureStore1Application using Java 17 on DESKTOP-GDATQRR with PID 1712 (C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1\target\classes started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 08:58:32,007 INFO com.OnlineFurnitureStore1Application [main] No active profile set, falling back to default profiles: default
+2021-11-12 08:58:34,260 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 08:58:34,525 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 252 ms. Found 8 JPA repository interfaces.
+2021-11-12 08:58:35,583 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-11-12 08:58:35,597 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-12 08:58:35,598 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-11-12 08:58:35,599 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 08:58:35,786 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-11-12 08:58:35,786 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3679 ms
+2021-11-12 08:58:36,103 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 08:58:36,207 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 08:58:36,468 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 08:58:36,677 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 08:58:36,965 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 08:58:37,005 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 08:58:37,452 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 08:58:38,687 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 08:58:38,701 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 08:58:40,115 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 08:58:41,534 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-11-12 08:58:41,568 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-12 08:58:42,410 INFO com.OnlineFurnitureStore1Application [main] Started OnlineFurnitureStore1Application in 11.461 seconds (JVM running for 13.389)
+2021-11-12 08:58:48,251 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 08:58:48,251 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-11-12 08:58:48,254 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-11-12 09:20:22,718 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-11-12 09:20:22,808 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 09:20:22,811 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-11-12 09:20:22,819 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-11-12 09:20:43,524 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.FurnitureServicesTests], using SpringBootContextLoader
+2021-11-12 09:20:43,540 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.FurnitureServicesTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-12 09:20:43,543 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.FurnitureServicesTests]: FurnitureServicesTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-12 09:20:43,967 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.OnlineFurnitureStore1Application for test class com.FurnitureServicesTests
+2021-11-12 09:20:44,326 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-11-12 09:20:44,407 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4bff64c2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b2c4efb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@c35172e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c2db68f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3cc41abc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4566d049, org.springframework.test.context.transaction.TransactionalTestExecutionListener@61ce23ac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3668d4, org.springframework.test.context.event.EventPublishingTestExecutionListener@1c3b9394, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f2cfcc2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f6f61c8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4c2cc639, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ccb4b1b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4097cac, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@ec2cc4]
+2021-11-12 09:20:45,530 INFO com.FurnitureServicesTests [main] Starting FurnitureServicesTests using Java 17 on DESKTOP-GDATQRR with PID 10784 (started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 09:20:45,536 INFO com.FurnitureServicesTests [main] No active profile set, falling back to default profiles: default
+2021-11-12 09:20:45,556 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 09:20:49,536 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 09:20:50,009 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 458 ms. Found 8 JPA repository interfaces.
+2021-11-12 09:20:54,227 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 09:20:54,494 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 09:20:54,619 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 09:20:55,194 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 09:20:55,643 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 09:20:55,745 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 09:20:56,803 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 09:20:58,498 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 09:20:58,520 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 09:21:01,918 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 09:21:09,083 INFO com.FurnitureServicesTests [main] Started FurnitureServicesTests in 24.487 seconds (JVM running for 27.699)
+2021-11-12 09:21:09,703 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 09:21:09,707 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-11-12 09:21:09,715 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-11-12 09:22:59,617 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 09:22:59,657 INFO com.OnlineFurnitureStore1Application [main] Starting OnlineFurnitureStore1Application using Java 17 on DESKTOP-GDATQRR with PID 420 (C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1\target\classes started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 09:22:59,660 INFO com.OnlineFurnitureStore1Application [main] No active profile set, falling back to default profiles: default
+2021-11-12 09:23:01,967 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 09:23:02,416 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 428 ms. Found 8 JPA repository interfaces.
+2021-11-12 09:23:03,424 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-11-12 09:23:03,442 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-12 09:23:03,443 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-11-12 09:23:03,444 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 09:23:03,684 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-11-12 09:23:03,684 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3900 ms
+2021-11-12 09:23:04,082 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 09:23:04,177 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 09:23:04,364 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 09:23:04,574 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 09:23:04,859 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 09:23:04,903 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 09:23:05,378 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 09:23:06,625 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 09:23:06,637 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 09:23:08,234 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 09:23:09,921 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-11-12 09:23:09,975 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-12 09:23:11,226 INFO com.OnlineFurnitureStore1Application [main] Started OnlineFurnitureStore1Application in 12.435 seconds (JVM running for 13.897)
+2021-11-12 09:36:51,481 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-11-12 09:36:51,538 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 09:36:51,543 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-11-12 09:36:51,549 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-11-12 09:55:44,082 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.FurnitureServicesTests], using SpringBootContextLoader
+2021-11-12 09:55:44,096 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.FurnitureServicesTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-12 09:55:44,098 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.FurnitureServicesTests]: FurnitureServicesTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-12 09:55:44,540 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.OnlineFurnitureStore1Application for test class com.FurnitureServicesTests
+2021-11-12 09:55:45,062 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-11-12 09:55:45,169 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4bff64c2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b2c4efb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@c35172e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c2db68f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3cc41abc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4566d049, org.springframework.test.context.transaction.TransactionalTestExecutionListener@61ce23ac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3668d4, org.springframework.test.context.event.EventPublishingTestExecutionListener@1c3b9394, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f2cfcc2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f6f61c8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4c2cc639, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ccb4b1b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4097cac, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@ec2cc4]
+2021-11-12 09:55:46,337 INFO com.FurnitureServicesTests [main] Starting FurnitureServicesTests using Java 17 on DESKTOP-GDATQRR with PID 5848 (started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 09:55:46,345 INFO com.FurnitureServicesTests [main] No active profile set, falling back to default profiles: default
+2021-11-12 09:55:46,348 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 09:55:50,633 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 09:55:51,208 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 538 ms. Found 8 JPA repository interfaces.
+2021-11-12 09:55:54,877 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 09:55:55,118 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 09:55:55,260 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 09:55:55,671 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 09:55:56,101 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 09:55:56,156 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 09:55:57,053 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 09:55:58,512 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 09:55:58,526 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 09:56:01,743 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 09:56:08,305 INFO com.FurnitureServicesTests [main] Started FurnitureServicesTests in 22.886 seconds (JVM running for 27.104)
+2021-11-12 09:56:08,725 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 09:56:08,728 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-11-12 09:56:08,733 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-11-12 09:56:25,872 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 09:56:25,892 INFO com.OnlineFurnitureStore1Application [main] Starting OnlineFurnitureStore1Application using Java 17 on DESKTOP-GDATQRR with PID 7712 (C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1\target\classes started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 09:56:25,893 INFO com.OnlineFurnitureStore1Application [main] No active profile set, falling back to default profiles: default
+2021-11-12 09:56:28,249 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 09:56:28,602 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 341 ms. Found 8 JPA repository interfaces.
+2021-11-12 09:56:29,773 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-11-12 09:56:29,789 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-12 09:56:29,790 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-11-12 09:56:29,791 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 09:56:29,971 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-11-12 09:56:29,972 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3952 ms
+2021-11-12 09:56:30,356 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 09:56:30,480 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 09:56:30,714 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 09:56:30,864 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 09:56:31,137 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 09:56:31,185 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 09:56:31,539 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 09:56:32,789 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 09:56:32,802 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 09:56:34,277 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 09:56:36,015 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-11-12 09:56:36,046 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-12 09:56:37,359 INFO com.OnlineFurnitureStore1Application [main] Started OnlineFurnitureStore1Application in 12.047 seconds (JVM running for 13.56)
+2021-11-12 09:58:04,833 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 09:58:04,834 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-11-12 09:58:04,840 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 6 ms
+2021-11-12 09:58:31,359 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 0, SQLState: 23503
+2021-11-12 09:58:31,361 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(34) is still referenced from table "review".
+2021-11-12 09:58:31,366 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-6] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:02:12,401 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 0, SQLState: 23503
+2021-11-12 10:02:12,414 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] ERROR: update or delete on table "furniture" violates foreign key constraint "fk26ov917fvbuij3vq2t8sgus1w" on table "cart"
+  Detail: Key (furnitureid)=(19001) is still referenced from table "cart".
+2021-11-12 10:02:12,414 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-7] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:02:58,492 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] SQL Error: 0, SQLState: 23503
+2021-11-12 10:02:58,492 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] ERROR: update or delete on table "furniture" violates foreign key constraint "fk26ov917fvbuij3vq2t8sgus1w" on table "cart"
+  Detail: Key (furnitureid)=(19001) is still referenced from table "cart".
+2021-11-12 10:02:58,492 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-8] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:03:15,159 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-11-12 10:03:15,204 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 10:03:15,206 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-11-12 10:03:15,212 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-11-12 10:03:27,272 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 10:03:27,307 INFO com.OnlineFurnitureStore1Application [main] Starting OnlineFurnitureStore1Application using Java 17 on DESKTOP-GDATQRR with PID 5224 (C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1\target\classes started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 10:03:27,308 INFO com.OnlineFurnitureStore1Application [main] No active profile set, falling back to default profiles: default
+2021-11-12 10:03:29,456 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 10:03:29,831 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 359 ms. Found 8 JPA repository interfaces.
+2021-11-12 10:03:30,911 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-11-12 10:03:30,928 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-12 10:03:30,929 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-11-12 10:03:30,930 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 10:03:31,123 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-11-12 10:03:31,124 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3722 ms
+2021-11-12 10:03:31,429 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 10:03:31,494 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 10:03:31,633 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 10:03:31,784 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 10:03:32,084 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 10:03:32,121 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 10:03:32,506 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 10:03:33,618 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 10:03:33,630 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 10:03:34,957 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 10:03:36,484 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-11-12 10:03:36,510 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-12 10:03:37,590 INFO com.OnlineFurnitureStore1Application [main] Started OnlineFurnitureStore1Application in 10.888 seconds (JVM running for 12.176)
+2021-11-12 10:03:42,691 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 10:03:42,692 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-11-12 10:03:42,695 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2021-11-12 10:03:42,890 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 23503
+2021-11-12 10:03:42,891 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: update or delete on table "furniture" violates foreign key constraint "fk26ov917fvbuij3vq2t8sgus1w" on table "cart"
+  Detail: Key (furnitureid)=(19001) is still referenced from table "cart".
+2021-11-12 10:03:42,894 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-1] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:04:01,246 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 0, SQLState: 23503
+2021-11-12 10:04:01,247 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] ERROR: update or delete on table "furniture" violates foreign key constraint "fk26ov917fvbuij3vq2t8sgus1w" on table "cart"
+  Detail: Key (furnitureid)=(19001) is still referenced from table "cart".
+2021-11-12 10:04:01,247 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-7] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:09:31,963 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 0, SQLState: 23503
+2021-11-12 10:09:31,963 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] ERROR: update or delete on table "furniture" violates foreign key constraint "fk26ov917fvbuij3vq2t8sgus1w" on table "cart"
+  Detail: Key (furnitureid)=(19001) is still referenced from table "cart".
+2021-11-12 10:09:31,963 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-7] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:10:25,394 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: 23503
+2021-11-12 10:10:25,407 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] ERROR: update or delete on table "furniture" violates foreign key constraint "fk7kcdfcx0yixhhvfncogdg7gtg" on table "bill"
+  Detail: Key (furnitureid)=(19009) is still referenced from table "bill".
+2021-11-12 10:10:25,408 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-4] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:11:02,062 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 0, SQLState: 23503
+2021-11-12 10:11:02,078 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] ERROR: update or delete on table "furniture" violates foreign key constraint "fk7kcdfcx0yixhhvfncogdg7gtg" on table "bill"
+  Detail: Key (furnitureid)=(19009) is still referenced from table "bill".
+2021-11-12 10:11:02,078 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-5] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:13:00,101 WARN org.springframework.validation.DataBinder [http-nio-8080-exec-9] Skipping URI variable 'furnitureId' because request contains bind value with same name.
+2021-11-12 10:13:39,329 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 0, SQLState: 23503
+2021-11-12 10:13:39,342 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(73001) is still referenced from table "review".
+2021-11-12 10:13:39,343 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-2] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:14:50,819 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 0, SQLState: 23503
+2021-11-12 10:14:50,820 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(73001) is still referenced from table "review".
+2021-11-12 10:14:50,821 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-5] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:15:04,436 WARN org.springframework.validation.DataBinder [http-nio-8080-exec-6] Skipping URI variable 'furnitureId' because request contains bind value with same name.
+2021-11-12 10:18:12,100 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 0, SQLState: 23503
+2021-11-12 10:18:12,101 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] ERROR: update or delete on table "furniture" violates foreign key constraint "fk26ov917fvbuij3vq2t8sgus1w" on table "cart"
+  Detail: Key (furnitureid)=(19001) is still referenced from table "cart".
+2021-11-12 10:18:12,101 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-3] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:35:19,704 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] SQL Error: 0, SQLState: 23503
+2021-11-12 10:35:19,705 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] ERROR: update or delete on table "furniture" violates foreign key constraint "fk26ov917fvbuij3vq2t8sgus1w" on table "cart"
+  Detail: Key (furnitureid)=(19001) is still referenced from table "cart".
+2021-11-12 10:35:19,705 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-8] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:37:13,462 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 0, SQLState: 23503
+2021-11-12 10:37:13,462 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(73001) is still referenced from table "review".
+2021-11-12 10:37:13,463 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-6] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:37:26,349 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 0, SQLState: 23503
+2021-11-12 10:37:26,350 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(73001) is still referenced from table "review".
+2021-11-12 10:37:26,350 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-7] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 10:37:53,036 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] SQL Error: 0, SQLState: 23503
+2021-11-12 10:37:53,049 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(73001) is still referenced from table "review".
+2021-11-12 10:37:53,050 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-8] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 11:10:40,716 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 0, SQLState: 23503
+2021-11-12 11:10:40,718 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: update or delete on table "customer" violates foreign key constraint "fkbdee9yotyqhijp1ebhc7wlbok" on table "bill"
+  Detail: Key (uid)=(25) is still referenced from table "bill".
+2021-11-12 11:15:02,538 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: 23503
+2021-11-12 11:15:02,538 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] ERROR: update or delete on table "customer" violates foreign key constraint "fkbdee9yotyqhijp1ebhc7wlbok" on table "bill"
+  Detail: Key (uid)=(3) is still referenced from table "bill".
+2021-11-12 11:15:25,725 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 0, SQLState: 23503
+2021-11-12 11:15:25,726 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] ERROR: update or delete on table "customer" violates foreign key constraint "fkbdee9yotyqhijp1ebhc7wlbok" on table "bill"
+  Detail: Key (uid)=(3) is still referenced from table "bill".
+2021-11-12 11:16:31,152 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 0, SQLState: 23503
+2021-11-12 11:16:31,153 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] ERROR: update or delete on table "customer" violates foreign key constraint "fkbdee9yotyqhijp1ebhc7wlbok" on table "bill"
+  Detail: Key (uid)=(3) is still referenced from table "bill".
+2021-11-12 11:16:51,161 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 0, SQLState: 23503
+2021-11-12 11:16:51,162 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] ERROR: update or delete on table "customer" violates foreign key constraint "fkbdee9yotyqhijp1ebhc7wlbok" on table "bill"
+  Detail: Key (uid)=(25) is still referenced from table "bill".
+2021-11-12 11:17:03,588 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] SQL Error: 0, SQLState: 23503
+2021-11-12 11:17:03,588 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(19003) is still referenced from table "review".
+2021-11-12 11:17:03,589 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-8] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 11:17:50,986 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-11-12 11:17:51,104 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 11:17:51,114 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-11-12 11:17:51,128 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-11-12 11:17:56,339 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 11:17:56,450 INFO com.OnlineFurnitureStore1Application [main] Starting OnlineFurnitureStore1Application using Java 17 on DESKTOP-GDATQRR with PID 5012 (C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1\target\classes started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 11:17:56,453 INFO com.OnlineFurnitureStore1Application [main] No active profile set, falling back to default profiles: default
+2021-11-12 11:17:59,727 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 11:18:00,126 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 378 ms. Found 8 JPA repository interfaces.
+2021-11-12 11:18:01,526 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-11-12 11:18:01,550 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-12 11:18:01,552 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-11-12 11:18:01,552 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 11:18:01,827 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-11-12 11:18:01,828 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5195 ms
+2021-11-12 11:18:02,291 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 11:18:02,453 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 11:18:02,822 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 11:18:03,074 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 11:18:03,500 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 11:18:03,581 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 11:18:04,196 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 11:18:06,249 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 11:18:06,269 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 11:18:08,432 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 11:18:10,658 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-11-12 11:18:10,717 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-12 11:18:12,114 INFO com.OnlineFurnitureStore1Application [main] Started OnlineFurnitureStore1Application in 16.53 seconds (JVM running for 18.555)
+2021-11-12 11:18:15,665 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 11:18:15,666 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-11-12 11:18:15,670 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2021-11-12 11:18:22,632 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 0, SQLState: 23503
+2021-11-12 11:18:22,632 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(19003) is still referenced from table "review".
+2021-11-12 11:18:22,635 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-6] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 11:41:48,576 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-11-12 11:41:48,803 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 11:41:48,819 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-11-12 11:41:48,830 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-11-12 15:57:14,005 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.FurnitureServicesTests], using SpringBootContextLoader
+2021-11-12 15:57:14,026 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.FurnitureServicesTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-12 15:57:14,027 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.FurnitureServicesTests]: FurnitureServicesTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-12 15:57:14,486 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.OnlineFurnitureStore1Application for test class com.FurnitureServicesTests
+2021-11-12 15:57:14,872 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-11-12 15:57:14,928 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4bff64c2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b2c4efb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@c35172e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c2db68f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3cc41abc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4566d049, org.springframework.test.context.transaction.TransactionalTestExecutionListener@61ce23ac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3668d4, org.springframework.test.context.event.EventPublishingTestExecutionListener@1c3b9394, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f2cfcc2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f6f61c8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4c2cc639, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ccb4b1b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4097cac, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@ec2cc4]
+2021-11-12 15:57:15,979 INFO com.FurnitureServicesTests [main] Starting FurnitureServicesTests using Java 17 on DESKTOP-GDATQRR with PID 2884 (started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 15:57:15,983 INFO com.FurnitureServicesTests [main] No active profile set, falling back to default profiles: default
+2021-11-12 15:57:16,025 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 15:57:19,887 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 15:57:20,627 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 715 ms. Found 8 JPA repository interfaces.
+2021-11-12 15:57:24,299 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 15:57:24,502 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 15:57:24,650 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 15:57:25,065 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 15:57:25,505 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 15:57:25,587 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 15:57:26,512 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 15:57:27,939 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 15:57:27,955 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:57:30,866 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 15:57:37,653 INFO com.FurnitureServicesTests [main] Started FurnitureServicesTests in 22.466 seconds (JVM running for 26.065)
+2021-11-12 15:57:38,169 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:57:38,180 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-11-12 15:57:38,194 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-11-12 15:57:49,767 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-11-12 15:57:49,823 INFO com.OnlineFurnitureStore1Application [main] Starting OnlineFurnitureStore1Application using Java 17 on DESKTOP-GDATQRR with PID 14620 (C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1\target\classes started by vvlra in C:\Users\vvlra\git\OnlineFurnitureStore\OnlineFurnitureStore-1)
+2021-11-12 15:57:49,825 INFO com.OnlineFurnitureStore1Application [main] No active profile set, falling back to default profiles: default
+2021-11-12 15:57:51,790 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 15:57:52,055 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 254 ms. Found 8 JPA repository interfaces.
+2021-11-12 15:57:53,017 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-11-12 15:57:53,036 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-12 15:57:53,037 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-11-12 15:57:53,037 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 15:57:53,233 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-11-12 15:57:53,233 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3319 ms
+2021-11-12 15:57:53,550 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 15:57:53,619 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 15:57:53,805 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 15:57:53,962 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-11-12 15:57:54,246 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-11-12 15:57:54,290 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 15:57:54,649 WARN org.hibernate.id.UUIDHexGenerator [main] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-11-12 15:57:55,683 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 15:57:55,699 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:57:57,005 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 15:57:58,617 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-11-12 15:57:58,704 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-12 15:57:59,721 INFO com.OnlineFurnitureStore1Application [main] Started OnlineFurnitureStore1Application in 10.58 seconds (JVM running for 12.183)
+2021-11-12 15:58:12,702 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 15:58:12,703 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-11-12 15:58:12,708 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 5 ms
+2021-11-12 15:59:13,228 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 0, SQLState: 23503
+2021-11-12 15:59:13,229 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] ERROR: update or delete on table "furniture" violates foreign key constraint "fkd0iuxgo160ryh0a52i2vmi59h" on table "review"
+  Detail: Key (furnitureid)=(73001) is still referenced from table "review".
+2021-11-12 15:59:13,237 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-6] HHH000010: On release of batch it still contained JDBC statements
+2021-11-12 16:25:59,420 WARN org.springframework.validation.DataBinder [http-nio-8080-exec-8] Skipping URI variable 'furnitureId' because request contains bind value with same name.
+2021-11-12 17:21:03,195 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-11-12 17:21:03,405 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 17:21:03,415 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-11-12 17:21:03,421 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
